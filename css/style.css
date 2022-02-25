@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ========================================================
+ common css ends
+ ========================================================== */
+
+.navbar {
+  background: rgba(53, 53, 53, 0.25);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  line-height: 50px;
+  padding: 0 10px !important;
+}
