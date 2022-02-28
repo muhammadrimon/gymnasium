@@ -1,3 +1,13 @@
+:root {
+  --open: "Open Sans", sans-serif;
+  --oswald: "Oswald", sans-serif;
+  --brandcol: #e23e38;
+  --linkhov: #ffffff;
+  --ban-over: rgba(0, 0, 0, 0.6);
+  --glbg-over: rgba(0, 0, 0, 0.8);
+  --glover: rgba(226, 62, 56, 0.5);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -19,11 +29,148 @@ ul {
  common css ends
  ========================================================== */
 
+.open-l {
+  font-family: var(--open);
+  font-weight: 300;
+}
+
+.open-r {
+  font-family: var(--open);
+  font-weight: 400;
+}
+
+.open-md {
+  font-family: var(--open);
+  font-weight: 500;
+}
+
+.open-sb {
+  font-family: var(--open);
+  font-weight: 600;
+}
+
+.open-b {
+  font-family: var(--open);
+  font-weight: 700;
+}
+
+.oswald-l {
+  font-family: var(--oswald);
+  font-weight: 300;
+}
+
+.oswald-r {
+  font-family: var(--oswald);
+  font-weight: 400;
+}
+
+.oswald-md {
+  font-family: var(--oswald);
+  font-weight: 500;
+}
+
+.oswald-sb {
+  font-family: var(--oswald);
+  font-weight: 600;
+}
+
+.oswald-b {
+  font-family: var(--oswald);
+  font-weight: 700;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-50 {
+  font-size: 50px;
+}
+
+.fs-60 {
+  font-size: 60px;
+}
+
+/* ========================================================
+ typography css end
+ ========================================================== */
+
 .navbar {
   background: rgba(53, 53, 53, 0.25);
+  position: fixed;
+  top: 30px;
+  left: 0;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
   line-height: 50px;
   padding: 0 10px !important;
+  position: relative;
 }
+
+.navbar-expand-lg .navbar-nav .nav-link::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: var(--linkhov);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+  transition: all linear 0.4s;
+}
+.navbar-expand-lg .navbar-nav .nav-link.active::before,
+.navbar-expand-lg .navbar-nav .nav-link:hover::before {
+  width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: var(--brandcol);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transition: all linear 0.4s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active::after,
+.navbar-expand-lg .navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-light .navbar-brand {
+  padding: 10px 35px !important;
+  background: rgba(241, 241, 241, 0.2);
+  transform: skewX(-40deg);
+}
+
+.navbar-light .navbar-brand img {
+  transform: skewX(40deg);
+}
+
+/* ========================================================
+ navbar css end
+ ========================================================== */
