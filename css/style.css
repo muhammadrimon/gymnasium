@@ -3,9 +3,13 @@
   --oswald: "Oswald", sans-serif;
   --brandcol: #e23e38;
   --linkhov: #ffffff;
-  --ban-over: rgba(0, 0, 0, 0.6);
-  --glbg-over: rgba(0, 0, 0, 0.8);
+  --over6: rgba(0, 0, 0, 0.6);
+  --over8: rgba(0, 0, 0, 0.8);
+  --over8: rgba(0, 0, 0, 0.9);
+  --fover: rgba(0, 0, 0, 0.85);
   --glover: rgba(226, 62, 56, 0.5);
+  --hcol: #353535;
+  --pcol: #777777;
 }
 
 * {
@@ -79,6 +83,10 @@ ul {
   font-weight: 700;
 }
 
+.fs-12 {
+  font-size: 12px;
+}
+
 .fs-13 {
   font-size: 13px;
 }
@@ -120,12 +128,19 @@ ul {
   position: fixed;
   top: 30px;
   left: 0;
+  z-index: 99999;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
   line-height: 50px;
   padding: 0 10px !important;
   position: relative;
+  color: #f1f1f1 !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active,
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: var(--hcol) !important;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link::before {
@@ -173,4 +188,168 @@ ul {
 
 /* ========================================================
  navbar css end
+ ========================================================== */
+
+#banner .bg1 {
+  background: url(../images/banner1.jpg) no-repeat center / cover;
+}
+
+#banner .bg2 {
+  background: url(../images/banner2.jpg) no-repeat center / cover;
+}
+
+#banner .bg3 {
+  background: url(../images/banner3.jpg) no-repeat center / cover;
+}
+
+#banner .banner-item {
+  position: relative;
+  padding-top: 248px;
+  padding-bottom: 117px;
+  z-index: 1;
+}
+
+#banner .banner-item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--over6);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+#banner .banner-item .banner-text h1 {
+  padding-top: 10px;
+  color: var(--brandcol);
+  padding-bottom: 15px !important;
+}
+
+#banner .banner-item .banner-text p {
+  line-height: 18px;
+}
+
+#banner .banner-item .banner-text a {
+  margin-top: 30px;
+  transition: all linear 0.4s;
+  line-height: 34px;
+  padding: 0 14px;
+}
+
+#banner .banner-item .banner-text a:hover {
+  border-color: var(--brandcol);
+  background: var(--brandcol);
+}
+
+#banner .banner-item .banner-text a:first-of-type {
+  margin-right: 25px;
+}
+
+#banner .bg1 .banner-text h3 {
+  position: relative;
+}
+
+#banner .bg1 .banner-text h3::after {
+  content: "";
+  width: 165px;
+  height: 3px;
+  background: var(--brandcol);
+  position: absolute;
+  top: 29px;
+  left: -57px;
+}
+
+#banner .bg1 .banner-text h3::before {
+  content: "";
+  width: 110px;
+  height: 3px;
+  background: var(--brandcol);
+  position: absolute;
+  top: 29px;
+  right: -56px;
+}
+
+#banner .bg1 .banner-text h1 {
+  position: relative;
+}
+
+#banner .bg1 .banner-text h1::after {
+  content: "";
+  width: 3px;
+  height: 200px;
+  background: var(--brandcol);
+  position: absolute;
+  top: -7px;
+  left: -57px;
+}
+
+#banner .bg1 .banner-text h1::before {
+  content: "";
+  width: 3px;
+  height: 200px;
+  background: var(--brandcol);
+  position: absolute;
+  top: -7px;
+  right: -57px;
+}
+
+#banner .bg1 .banner-text p {
+  position: relative;
+}
+
+#banner .bg1 .banner-text p::after {
+  content: "";
+  width: 75px;
+  height: 3px;
+  background: var(--brandcol);
+  position: absolute;
+  bottom: -42px;
+  left: -57px;
+}
+
+#banner .bg1 .banner-text p::before {
+  content: "";
+  width: 46px;
+  height: 3px;
+  background: var(--brandcol);
+  position: absolute;
+  bottom: -42px;
+  right: -57px;
+}
+
+#banner .slick-dots li button {
+  font-size: 0;
+  border: none;
+  outline: none;
+}
+
+#banner .slick-dots {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+}
+
+#banner .slick-dots li {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#banner .slick-dots li.slick-active {
+  border-color: var(--brandcol);
+  background: var(--brandcol);
+  transform: scale(1.2);
+}
+
+#banner .slick-dots li:last-child {
+  margin-right: 0;
+}
+
+/* ========================================================
+ banner css end
  ========================================================== */
