@@ -8,6 +8,7 @@
   --over8: rgba(0, 0, 0, 0.9);
   --fover: rgba(0, 0, 0, 0.85);
   --glover: rgba(226, 62, 56, 0.5);
+  --glb: rgba(255, 255, 255, 0.5);
   --hcol: #353535;
   --pcol: #777777;
 }
@@ -15,6 +16,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -354,6 +356,22 @@ ul {
  banner css end
  ========================================================== */
 
+header h3 {
+  color: var(--hcol);
+}
+
+header img {
+  margin-top: -5px !important;
+}
+
+/* ========================================================
+ header css end
+ ========================================================== */
+
+#about {
+  margin: 80px 0;
+}
+
 #about .about-video .overlay {
   background: var(--over6);
 }
@@ -367,6 +385,66 @@ ul {
   text-align: center;
   border-radius: 50%;
   color: var(--hcol);
+}
+
+#about .about-text p {
+  color: var(--pcol);
+  line-height: 24px;
+}
+
+#about .about-text p:first-of-type {
+  padding-top: 15px !important;
+}
+
+#about .about-text p:last-of-type {
+  padding-top: 20px !important;
+}
+
+/* ========================================================
+ about css end
+ ========================================================== */
+
+#gallery .gallery-bg {
+  background: url(../images/gl-bg.jpg) no-repeat center / cover;
+  position: relative;
+  z-index: 1;
+  margin-top: 25px;
+  padding-top: 30px;
+}
+
+#gallery .gallery-bg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--over8);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+#gallery .gallery-bg .gallery-item {
+  margin-bottom: 30px;
+}
+
+#gallery .gallery-bg .gallery-item .gallery-overlay {
+  background: var(--glover);
+  border: 5px solid var(--glb);
+  transform: scale(0);
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 0.4s;
+}
+
+#gallery .gallery-bg .gallery-item:hover .gallery-overlay {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(0.95);
+}
+
+#gallery .gallery-bg .gallery-item .gallery-overlay i {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
 }
 
 /* ========================================================

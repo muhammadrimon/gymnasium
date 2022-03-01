@@ -16,4 +16,12 @@ $(document).ready(function () {
     spinner: "grid",
     toolsColor: "#e23e38",
   });
+
+  // gallery image popup;
+  new VenoBox({
+    selector: ".gallery-popup",
+    spinColor: "#e23e38",
+    spinner: "grid",
+    toolsColor: "#e23e38",
+  });
 });
