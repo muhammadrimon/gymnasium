@@ -353,3 +353,22 @@ ul {
 /* ========================================================
  banner css end
  ========================================================== */
+
+#about .about-video .overlay {
+  background: var(--over6);
+}
+
+#about .about-video .overlay i {
+  width: 48px;
+  height: 48px;
+  background: var(--brandcol);
+  font-size: 30px;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--hcol);
+}
+
+/* ========================================================
+ about css end
+ ========================================================== */
