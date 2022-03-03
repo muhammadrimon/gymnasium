@@ -11,6 +11,9 @@
   --glb: rgba(255, 255, 255, 0.5);
   --hcol: #353535;
   --pcol: #777777;
+  --icol: #1da0f2;
+  --hcol2: #555555;
+  --ddd: #dddddd;
 }
 
 * {
@@ -404,6 +407,10 @@ header img {
  about css end
  ========================================================== */
 
+#gallery {
+  margin-bottom: 70px;
+}
+
 #gallery .gallery-bg {
   background: url(../images/gl-bg.jpg) no-repeat center / cover;
   position: relative;
@@ -449,4 +456,88 @@ header img {
 
 /* ========================================================
  about css end
+ ========================================================== */
+
+#team {
+  margin-bottom: 40px;
+}
+
+#team .team-member {
+  margin-top: 60px;
+  transition: all linear 0.4s;
+}
+
+#team .team-member:hover {
+  transform: translateY(-40px);
+}
+
+#team .team-member .team-image .team-overlay {
+  background: var(--glover);
+  border: 5px solid var(--glb);
+  transform: scale(0);
+  transition: all linear 0.4s;
+}
+
+#team .team-member:hover .team-image .team-overlay {
+  transform: scale(0.95);
+}
+
+#team .team-member .team-image .team-overlay a {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#team .team-member .team-image .team-overlay a:last-of-type {
+  margin-bottom: 0 !important;
+}
+
+#team .team-member .team-image .team-overlay a i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  transition: all linear 0.4s;
+}
+
+#team .team-member .team-image .team-overlay a i:hover {
+  color: var(--icol);
+  background: #fff;
+}
+
+#team .team-member .card {
+  border-color: transparent;
+  transition: all linear 0.4s;
+}
+
+#team .team-member:hover .card {
+  border-color: var(--ddd);
+}
+
+#team .team-member .card .card-body h5 {
+  margin-top: 18px;
+  color: var(--hcol);
+}
+
+#team .team-member .card .card-body h6 {
+  margin-top: 5px;
+  color: var(--hcol2);
+}
+
+#team .team-member .card .card-body p {
+  margin-top: 10px;
+  padding: 0 1px;
+  line-height: 18px;
+  margin-bottom: 20px !important;
+  color: var(--pcol);
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.4s;
+}
+
+#team .team-member:hover .card .card-body p {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ========================================================
+ team css end
  ========================================================== */
