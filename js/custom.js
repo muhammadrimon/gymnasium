@@ -24,4 +24,12 @@ $(document).ready(function () {
     spinner: "grid",
     toolsColor: "#e23e38",
   });
+
+  // testimonial slider;
+  $(".testimonial-slider").slick({
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    slidesToShow: 2,
+  });
 });

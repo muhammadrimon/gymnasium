@@ -334,6 +334,7 @@ ul {
   left: 50%;
   bottom: 15px;
   transform: translateX(-50%);
+  padding-left: 0 !important;
 }
 
 #banner .slick-dots li {
@@ -540,4 +541,88 @@ header img {
 
 /* ========================================================
  team css end
+ ========================================================== */
+
+#testimonial .testimonial-bg {
+  background: url(../images/testimonial-bg.jpg) no-repeat center / cover;
+  position: relative;
+  z-index: 1;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  margin-top: 25px;
+}
+
+#testimonial .testimonial-bg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--over8);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+#testimonial .testimonial-bg .testimonial-slider .testimonial-item {
+  margin: 0 15px !important;
+}
+
+#testimonial .testimonial-bg .testimonial-slider .testimonial-item .testimonial-image {
+  width: 80px;
+}
+
+#testimonial .testimonial-bg .testimonial-slider .testimonial-item .testimonial-details {
+  margin-left: 14px;
+}
+
+#testimonial .testimonial-bg .testimonial-slider .testimonial-item .testimonial-details h3 {
+  padding-bottom: 5px !important;
+}
+
+#testimonial .testimonial-bg .testimonial-slider .testimonial-item .testimonial-details .ratings {
+  padding-top: 5px !important;
+}
+
+#testimonial .testimonial-bg .testimonial-slider .testimonial-item .testimonial-text p {
+  font-size: 12px !important;
+  text-align: justify;
+  line-height: 18px;
+  padding-top: 5px;
+}
+
+#testimonial .testimonial-bg .slick-dots li button {
+  font-size: 0;
+  border: none;
+  outline: none;
+}
+
+#testimonial .testimonial-bg .slick-dots {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: -64px;
+  transform: translateX(-50%);
+  padding-left: 0 !important;
+}
+
+#testimonial .testimonial-bg .slick-dots li {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#testimonial .testimonial-bg .slick-dots li.slick-active {
+  border-color: var(--brandcol);
+  background: var(--brandcol);
+  transform: scale(1.2);
+}
+
+#testimonial .testimonial-bg .slick-dots li:last-child {
+  margin-right: 0;
+}
+
+/* ========================================================
+ testimonial css end
  ========================================================== */
