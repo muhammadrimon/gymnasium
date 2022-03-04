@@ -14,6 +14,7 @@
   --icol: #1da0f2;
   --hcol2: #555555;
   --ddd: #dddddd;
+  --f1f1: #f1f1f1;
 }
 
 * {
@@ -625,4 +626,60 @@ header img {
 
 /* ========================================================
  testimonial css end
+ ========================================================== */
+
+#membership {
+  margin-top: 75px;
+}
+
+#membership .membership-bg {
+  margin-top: 25px;
+}
+
+#membership .membership-bg .membership-item .membership-header h4 {
+  background: var(--ddd);
+  line-height: 55px;
+  color: var(--hcol);
+  transition: all linear 0.4s;
+}
+
+#membership .membership-bg .membership-item:hover .membership-header h4 {
+  background: var(--brandcol);
+  color: #fff;
+}
+
+#membership .membership-bg .membership-item .membership-image .member-overlay {
+  background: var(--over8);
+}
+
+#membership .membership-bg .membership-item .membership-list ul {
+  padding: 35px 0 !important;
+}
+
+#membership .membership-bg .membership-item .membership-list {
+  background: var(--f1f1);
+}
+
+#membership .membership-bg .membership-item .membership-list ul li {
+  color: var(--pcol);
+  margin-bottom: 17px;
+}
+
+#membership .membership-bg .membership-item .membership-list ul li:last-child {
+  margin-bottom: 0;
+}
+
+#membership .membership-bg .membership-item .membership-btn a {
+  background: var(--ddd);
+  line-height: 34px;
+  transition: all linear 0.4s;
+}
+
+#membership .membership-bg .membership-item:hover .membership-btn a {
+  color: #fff;
+  background: var(--brandcol);
+}
+
+/* ========================================================
+ membership css end
  ========================================================== */
