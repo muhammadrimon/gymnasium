@@ -5,7 +5,7 @@
   --linkhov: #ffffff;
   --over6: rgba(0, 0, 0, 0.6);
   --over8: rgba(0, 0, 0, 0.8);
-  --over8: rgba(0, 0, 0, 0.9);
+  --over9: rgba(0, 0, 0, 0.9);
   --fover: rgba(0, 0, 0, 0.85);
   --glover: rgba(226, 62, 56, 0.5);
   --glb: rgba(255, 255, 255, 0.5);
@@ -682,4 +682,27 @@ header img {
 
 /* ========================================================
  membership css end
+ ========================================================== */
+
+#counterup {
+  background: url(../images/counter-bg.jpg) no-repeat center / cover;
+  position: relative;
+  z-index: 1;
+  padding-top: 35px;
+  padding-bottom: 45px;
+  margin-top: 80px;
+}
+
+#counterup::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--over9);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+/* ========================================================
+ counterup css end
  ========================================================== */

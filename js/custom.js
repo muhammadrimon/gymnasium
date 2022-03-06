@@ -32,4 +32,10 @@ $(document).ready(function () {
     autoplay: true,
     slidesToShow: 2,
   });
+
+  //  counter up ;
+  $(".counter").counterUp({
+    delay: 10,
+    time: 1000,
+  });
 });
