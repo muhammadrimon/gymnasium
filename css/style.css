@@ -706,3 +706,30 @@ header img {
 /* ========================================================
  counterup css end
  ========================================================== */
+
+#routine .routine-menu .nav-tabs {
+  border-bottom: none;
+}
+
+#routine .routine-menu ul li {
+  width: 16.66%;
+  background: var(--f1f1);
+  line-height: 50px;
+}
+
+#routine .routine-menu .nav-tabs .nav-link {
+  border-radius: 0 !important;
+  width: 100%;
+  padding: 0 !important;
+  color: var(--hcol);
+}
+
+#routine .routine-menu .nav-tabs .nav-link:hover {
+  border-color: transparent !important;
+}
+
+#routine .routine-menu .nav-tabs .nav-link.active {
+  border-color: transparent !important;
+  color: var(--linkhov);
+  background: var(--brandcol);
+}
