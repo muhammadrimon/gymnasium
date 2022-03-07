@@ -38,4 +38,16 @@ $(document).ready(function () {
     delay: 10,
     time: 1000,
   });
+
+  // brand-slider ;
+  $(".brand-slider").slick({
+    arrows: true,
+    prevArrow: '<i class="left-arrow fa-solid fa-chevron-left"></i>',
+    nextArrow: '<i class="right-arrow fa-solid fa-chevron-right"></i>',
+    dots: false,
+    // autoplay: true,
+    slidesToShow: 5,
+    centerMode: true,
+    centerPadding: "0px",
+  });
 });

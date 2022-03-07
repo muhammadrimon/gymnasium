@@ -777,3 +777,56 @@ header img {
 #routine .routine-item ul li p:last-of-type {
   margin-top: 5px !important;
 }
+
+/* ========================================================
+ routine css end
+ ========================================================== */
+
+#brand {
+  margin-top: 65px;
+  position: relative;
+}
+
+#brand .brand-slider .brand-item.slick-center {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+#brand .brand-slider .slick-track {
+  padding: 5px 0px;
+}
+
+#brand .brand-slider .brand-item {
+  margin: 0 15px;
+}
+
+#brand .left-arrow {
+  font-size: 28px;
+  color: var(--hcol);
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  transition: all linear 0.4s;
+}
+
+#brand .left-arrow:hover {
+  color: var(--brandcol);
+}
+
+#brand .right-arrow {
+  font-size: 28px;
+  color: var(--hcol);
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  transition: all linear 0.4s;
+}
+
+#brand .right-arrow:hover {
+  color: var(--brandcol);
+}
+
+/* ========================================================
+ brand css end
+ ========================================================== */
