@@ -707,6 +707,15 @@ header img {
  counterup css end
  ========================================================== */
 
+#routine {
+  margin-top: 75px;
+}
+
+#routine .routine-menu {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 #routine .routine-menu .nav-tabs {
   border-bottom: none;
 }
@@ -732,4 +741,39 @@ header img {
   border-color: transparent !important;
   color: var(--linkhov);
   background: var(--brandcol);
+}
+
+#routine .routine-item ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#routine .routine-item ul li {
+  background: var(--f1f1);
+  width: 19.57%;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+#routine .routine-item ul li.active {
+  background: var(--brandcol);
+  color: var(--linkhov);
+}
+
+#routine .routine-item ul li:nth-child(5n) {
+  margin-right: 0 !important;
+}
+
+#routine .routine-item ul li p {
+  text-transform: capitalize;
+}
+
+#routine .routine-item ul li p:first-of-type {
+  margin-bottom: 10px !important;
+}
+
+#routine .routine-item ul li p:last-of-type {
+  margin-top: 5px !important;
 }
