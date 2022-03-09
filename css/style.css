@@ -854,7 +854,19 @@ footer .footer-logo .logo {
 }
 
 footer .footer-main .opening-part ul {
-  margin-top: 30px !important;
+  margin-top: 25px !important;
+}
+
+footer .footer-main .footer-item ul li:last-of-type {
+  margin-bottom: 0 !important;
+}
+
+footer .footer-main .footer-item ul li {
+  font-size: 11px !important;
+}
+
+footer .footer-main .opening-part ul li span {
+  width: 100px;
 }
 
 /* ========================================================
