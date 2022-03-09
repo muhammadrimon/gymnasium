@@ -830,3 +830,33 @@ header img {
 /* ========================================================
  brand css end
  ========================================================== */
+
+footer {
+  background: url(../images/footer-bg.jpg) no-repeat center / cover;
+  position: relative;
+  z-index: 1;
+  margin-top: 75px;
+}
+
+footer::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--fover);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+footer .footer-logo .logo {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+footer .footer-main .opening-part ul {
+  margin-top: 30px !important;
+}
+
+/* ========================================================
+ footer css end
+ ========================================================== */

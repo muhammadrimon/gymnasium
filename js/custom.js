@@ -45,7 +45,7 @@ $(document).ready(function () {
     prevArrow: '<i class="left-arrow fa-solid fa-chevron-left"></i>',
     nextArrow: '<i class="right-arrow fa-solid fa-chevron-right"></i>',
     dots: false,
-    // autoplay: true,
+    autoplay: true,
     slidesToShow: 5,
     centerMode: true,
     centerPadding: "0px",
