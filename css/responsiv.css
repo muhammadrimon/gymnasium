@@ -24,7 +24,7 @@
   }
 
   .navbar-light .navbar-nav {
-    background: rgba(226, 62, 56, 0.5);
+    background: #474747;
   }
 
   .navbar-light .navbar-nav .nav-item {
@@ -134,4 +134,184 @@
 
 /* =======================================================================
                             extra small device
+======================================================================== */
+
+/* =======================================================================
+                            small device
+======================================================================== */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* ------------navigation bar start------------ */
+  .navbar-light .navbar-brand {
+    position: unset !important;
+    padding: 0 !important;
+    transform: skewX(0deg);
+  }
+
+  .navbar-light .navbar-brand img {
+    transform: skewX(0deg);
+  }
+
+  .navbar-light .navbar-toggler {
+    border-color: #e23e38 !important;
+    color: transparent !important;
+  }
+
+  .navbar-light .navbar-toggler i {
+    color: #e23e38;
+  }
+
+  .navbar-light .navbar-nav {
+    background: #474747;
+  }
+
+  .navbar-light .navbar-nav .nav-item {
+    z-index: 1;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link::before {
+    left: 0;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link::after {
+    left: 0;
+  }
+  /* ------------navigation bar ends------------ */
+
+  /* ------------banner start------------ */
+  #banner .bg1 .banner-text h3::before,
+  #banner .bg1 .banner-text h3::after,
+  #banner .bg1 .banner-text h1::before,
+  #banner .bg1 .banner-text h1::after,
+  #banner .bg1 .banner-text p::before,
+  #banner .bg1 .banner-text p::after {
+    display: none;
+  }
+
+  #banner .banner-item .banner-text h3 {
+    font-size: 26px;
+  }
+
+  #banner .banner-item .banner-text h1 {
+    font-size: 52px;
+  }
+  /* ------------banner ends------------ */
+
+  /* ------------about start------------ */
+  #about {
+    margin: 50px 0;
+  }
+
+  #about .about-text p {
+    line-height: 24px;
+  }
+
+  #about .about-video {
+    margin-top: 25px;
+  }
+
+  /* ------------about ends------------ */
+
+  /* ------------gallery start------------ */
+  #gallery {
+    margin-bottom: 50px;
+  }
+  /* ------------gallery end------------ */
+
+  /* ------------team start------------ */
+  #team {
+    margin-bottom: 20px;
+  }
+  /* ------------team ends------------ */
+
+  /* ------------testimonial start------------ */
+  #testimonial .testimonial-bg .testimonial-slider .testimonial-item .testimonial-details {
+    margin-left: 0px !important;
+  }
+
+  #testimonial .testimonial-bg .testimonial-slider .testimonial-item .testimonial-image {
+    width: 100%;
+  }
+  /* ------------testimonial ends------------ */
+
+  /* ------------membership start------------ */
+  #membership {
+    margin-top: 50px;
+  }
+
+  #membership .membership-bg .membership-item .membership-header h4 {
+    line-height: 40px;
+    font-size: 13px !important;
+  }
+
+  #membership .membership-bg .membership-item .membership-image .member-overlay h5 {
+    font-size: 30px !important;
+  }
+
+  #membership .membership-bg .membership-item .membership-image .member-overlay h5 span {
+    font-size: 18px !important;
+  }
+
+  #membership .membership-bg .membership-item .membership-list ul {
+    padding: 2px 0 !important;
+  }
+
+  #membership .membership-bg .membership-item .membership-list ul li {
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+
+  #membership .membership-bg .membership-item .membership-btn a {
+    line-height: 22px;
+    font-size: 13px;
+  }
+  /* ------------membership ends------------ */
+
+  /* ------------counterup ends------------ */
+  #counterup {
+    margin-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  #counterup .counter-item {
+    margin-bottom: 15px;
+  }
+  /* ------------counterup ends------------ */
+
+  /* ------------routine start------------ */
+  #routine {
+    margin-top: 50px;
+  }
+
+  #routine .routine-menu ul li {
+    width: 49.7%;
+    margin-bottom: 3px;
+    margin-right: 3px;
+  }
+  #routine .routine-menu ul li:nth-child(2n) {
+    margin-right: 0px;
+  }
+  #routine .routine-item ul li {
+    width: 49.03%;
+    text-align: center;
+  }
+  #routine .routine-item ul li:nth-child(5n) {
+    margin-right: 5px !important;
+  }
+  /* ------------routine ends------------ */
+
+  /* ------------footer start------------ */
+  footer .footer-main .footer-item {
+    margin-bottom: 20px;
+  }
+
+  footer .footer-main .flicker-photo,
+  footer .footer-main .contact {
+    margin-bottom: 0 !important;
+  }
+
+  /* ------------footer ends------------ */
+}
+
+/* =======================================================================
+                            small device
 ======================================================================== */

@@ -40,6 +40,15 @@ $(document).ready(function () {
           dots: true,
         },
       },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          autoplay: true,
+        },
+      },
     ],
   });
 
@@ -70,6 +79,18 @@ $(document).ready(function () {
           arrows: false,
           autoplay: true,
           autoplaySpeed: 1000,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: false,
+          centerMode: true,
+          arrows: true,
+          autoplay: true,
+          autoplaySpeed: 1500,
         },
       },
     ],
