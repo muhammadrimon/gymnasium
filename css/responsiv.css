@@ -1,0 +1,137 @@
+/* =======================================================================
+                            extra small device
+======================================================================== */
+
+@media (max-width: 575px) {
+  /* ------------navigation bar start------------ */
+  .navbar-light .navbar-brand {
+    position: unset !important;
+    padding: 0 !important;
+    transform: skewX(0deg);
+  }
+
+  .navbar-light .navbar-brand img {
+    transform: skewX(0deg);
+  }
+
+  .navbar-light .navbar-toggler {
+    border-color: #e23e38 !important;
+    color: transparent !important;
+  }
+
+  .navbar-light .navbar-toggler i {
+    color: #e23e38;
+  }
+
+  .navbar-light .navbar-nav {
+    background: rgba(226, 62, 56, 0.5);
+  }
+
+  .navbar-light .navbar-nav .nav-item {
+    z-index: 1;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link::before {
+    left: 0;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link::after {
+    left: 0;
+  }
+  /* ------------navigation bar ends------------ */
+
+  /* ------------banner start------------ */
+  #banner .bg1 .banner-text h3::before,
+  #banner .bg1 .banner-text h3::after,
+  #banner .bg1 .banner-text h1::before,
+  #banner .bg1 .banner-text h1::after,
+  #banner .bg1 .banner-text p::before,
+  #banner .bg1 .banner-text p::after {
+    display: none;
+  }
+
+  #banner .banner-item .banner-text h3 {
+    font-size: 26px;
+  }
+
+  #banner .banner-item .banner-text h1 {
+    font-size: 52px;
+  }
+  /* ------------banner ends------------ */
+
+  /* ------------about start------------ */
+  #about {
+    margin: 50px 0;
+  }
+
+  #about .about-text p {
+    line-height: 24px;
+  }
+
+  #about .about-video {
+    margin-top: 25px;
+  }
+
+  /* ------------about ends------------ */
+
+  /* ------------gallery start------------ */
+  #gallery {
+    margin-bottom: 50px;
+  }
+  /* ------------gallery ends------------ */
+
+  /* ------------team start------------ */
+  #team {
+    margin-bottom: 0px;
+  }
+  /* ------------team ends------------ */
+
+  /* ------------membership start------------ */
+  #membership {
+    margin-top: 50px;
+  }
+
+  #membership .membership-bg .membership-item .membership-list ul {
+    padding: 15px 0 !important;
+  }
+
+  #membership .membership-bg .membership-item .membership-list ul li {
+    margin-bottom: 10px;
+  }
+  /* ------------membership ends------------ */
+
+  /* ------------counterup start------------ */
+  #counterup {
+    margin-top: 50px;
+  }
+
+  #counterup .counter-item {
+    text-align: center;
+  }
+  /* ------------counterup ends------------ */
+
+  /* ------------routine start------------ */
+  #routine {
+    margin-top: 50px;
+  }
+
+  #routine .routine-menu ul li {
+    width: 100%;
+  }
+
+  #routine .routine-item ul li {
+    width: 100%;
+    text-align: center;
+  }
+  /* ------------routine ends------------ */
+
+  /* ------------routine ends------------ */
+  footer .footer-main .footer-item {
+    margin-bottom: 20px;
+  }
+  /* ------------routine ends------------ */
+}
+
+/* =======================================================================
+                            extra small device
+======================================================================== */

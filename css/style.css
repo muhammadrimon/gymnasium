@@ -394,7 +394,7 @@ header img {
 
 #about .about-text p {
   color: var(--pcol);
-  line-height: 24px;
+  line-height: 15px;
 }
 
 #about .about-text p:first-of-type {

@@ -4,7 +4,7 @@ $(document).ready(function () {
   $(".banner-slider").slick({
     arrows: false,
     dots: true,
-    autoplay: true,
+    // autoplay: true,
   });
 
   // about video popup;
@@ -31,6 +31,16 @@ $(document).ready(function () {
     dots: true,
     autoplay: true,
     slidesToShow: 2,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+    ],
   });
 
   //  counter up ;
@@ -49,5 +59,19 @@ $(document).ready(function () {
     slidesToShow: 5,
     centerMode: true,
     centerPadding: "0px",
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          centerMode: false,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 1000,
+        },
+      },
+    ],
   });
 });
