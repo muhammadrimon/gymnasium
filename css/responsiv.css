@@ -315,3 +315,95 @@
 /* =======================================================================
                             small device
 ======================================================================== */
+
+/* =======================================================================
+                            medium device
+======================================================================== */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* ------------navigation bar start------------ */
+  .navbar-light .navbar-brand {
+    position: unset !important;
+    transform: skewX(-35deg);
+    padding: 0 20px !important;
+  }
+
+  .navbar-light .navbar-brand img {
+    transform: skewX(35deg);
+  }
+
+  .navbar-light .navbar-toggler {
+    border-color: #e23e38 !important;
+    color: transparent !important;
+  }
+
+  .navbar-light .navbar-toggler i {
+    color: #e23e38;
+  }
+
+  .navbar-light .navbar-nav {
+    background: #474747;
+  }
+
+  .navbar-light .navbar-nav .nav-item {
+    z-index: 1;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link::before {
+    left: 0;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link::after {
+    left: 0;
+  }
+  /* ------------navigation bar ends------------ */
+
+  /* ------------banner start------------ */
+  #banner .bg1 .banner-text h3::after {
+    top: 20px;
+    left: 70px;
+    width: 155px;
+  }
+
+  #banner .bg1 .banner-text h3::before {
+    top: 20px;
+    right: 67px;
+  }
+
+  #banner .bg1 .banner-text h1::before {
+    top: -16px;
+    right: 67px;
+  }
+
+  #banner .bg1 .banner-text h1::after {
+    top: -16px;
+    left: 70px;
+  }
+
+  #banner .bg1 .banner-text p {
+    padding: 0 79px;
+  }
+
+  #banner .bg1 .banner-text p::after {
+    width: 73px;
+    bottom: -52px;
+    left: 70px;
+  }
+
+  #banner .bg1 .banner-text p::before {
+    width: 48px;
+    bottom: -51px;
+    right: 67px;
+  }
+
+  #banner .bg2 .banner-text p {
+    padding-right: 160px;
+  }
+
+  #banner .bg3 .banner-text p {
+    padding-left: 160px;
+  }
+  /* ------------banner ends------------ */
+}
+/* =======================================================================
+                            medium device
+======================================================================== */
