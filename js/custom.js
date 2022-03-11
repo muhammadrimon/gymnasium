@@ -107,4 +107,7 @@ $(document).ready(function () {
       },
     ],
   });
+
+  // scroll animation ;
+  AOS.init();
 });
