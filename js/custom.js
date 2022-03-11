@@ -4,7 +4,7 @@ $(document).ready(function () {
   $(".banner-slider").slick({
     arrows: false,
     dots: true,
-    // autoplay: true,
+    autoplay: true,
   });
 
   // about video popup;
@@ -83,6 +83,18 @@ $(document).ready(function () {
       },
       {
         breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: false,
+          centerMode: true,
+          arrows: true,
+          autoplay: true,
+          autoplaySpeed: 1500,
+        },
+      },
+      {
+        breakpoint: 992,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,

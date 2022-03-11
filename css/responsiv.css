@@ -266,7 +266,7 @@
   }
   /* ------------membership ends------------ */
 
-  /* ------------counterup ends------------ */
+  /* ------------counterup start------------ */
   #counterup {
     margin-top: 50px;
     padding-bottom: 30px;
@@ -403,7 +403,262 @@
     padding-left: 160px;
   }
   /* ------------banner ends------------ */
+
+  /* ------------about start------------ */
+  #about {
+    margin: 50px 0;
+  }
+
+  #about .about-text p {
+    line-height: 24px;
+  }
+
+  #about .about-video {
+    margin-top: 25px;
+  }
+
+  /* ------------about ends------------ */
+
+  /* ------------gallery start------------ */
+  #gallery {
+    margin-bottom: 50px;
+  }
+  /* ------------gallery end------------ */
+
+  /* ------------team start------------ */
+  #team {
+    margin-bottom: 20px;
+  }
+
+  #team .team-member {
+    margin-top: 40px;
+  }
+  /* ------------team ends------------ */
+
+  /* ------------membership start------------ */
+  #membership {
+    margin-top: 50px;
+  }
+
+  #membership .membership-bg .membership-item .membership-list ul {
+    padding: 10px 0 !important;
+  }
+
+  #membership .membership-bg .membership-item .membership-list ul li {
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+
+  /* ------------membership ends------------ */
+
+  /* ------------counterup start------------ */
+
+  #counterup {
+    margin-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  #counterup .counter-item {
+    margin-bottom: 15px;
+  }
+
+  /* ------------counterup ends------------ */
+
+  /* ------------routine start------------ */
+
+  #routine {
+    margin-top: 50px;
+  }
+
+  #routine .routine-item ul li {
+    width: 19.42%;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  #routine .routine-item ul li p:last-of-type {
+    font-size: 13px;
+  }
+
+  /* ------------routine ends------------ */
+
+  /* ------------brand start------------ */
+  #brand {
+    margin-top: 45px;
+  }
+  /* ------------brand ends------------ */
+
+  /* ------------footer start------------ */
+
+  footer {
+    margin-top: 50px;
+  }
+
+  footer .footer-main .footer-item {
+    margin-bottom: 20px;
+  }
+
+  footer .footer-main .flicker-photo,
+  footer .footer-main .contact {
+    margin-bottom: 0 !important;
+  }
+
+  /* ------------footer ends------------ */
 }
 /* =======================================================================
                             medium device
+======================================================================== */
+
+/* =======================================================================
+                            extra large device
+======================================================================== */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  /* ------------banner start------------ */
+  #banner .bg1 .banner-text h3::after {
+    top: 20px;
+    left: -11px;
+  }
+
+  #banner .bg1 .banner-text h3::before {
+    top: 20px;
+    right: -6px;
+  }
+
+  #banner .bg1 .banner-text h1::after {
+    top: -16px;
+    left: -11px;
+  }
+
+  #banner .bg1 .banner-text h1::before {
+    top: -16px;
+    right: -6px;
+  }
+
+  #banner .bg1 .banner-text p {
+    padding: 0 20px;
+  }
+
+  #banner .bg1 .banner-text p::after {
+    width: 79px;
+    bottom: -51px;
+    left: -11px;
+  }
+
+  #banner .bg1 .banner-text p::before {
+    bottom: -51px;
+    right: -6px;
+  }
+
+  #banner .bg2 .banner-text p {
+    padding-right: 20px;
+  }
+
+  #banner .bg3 .banner-text p {
+    padding-left: 20px;
+  }
+  /* ------------banner end------------ */
+
+  /* ------------about start------------ */
+  #about .about-text p {
+    line-height: 20px;
+    font-size: 16px;
+  }
+  /* ------------about end------------ */
+
+  /* ------------footer end------------ */
+  footer .footer-main .footer-item ul li {
+    font-size: 13px !important;
+  }
+  /* ------------footer end------------ */
+}
+
+/* =======================================================================
+                            extra large device
+======================================================================== */
+
+/* =======================================================================
+                            extra extra large device
+======================================================================== */
+@media (min-width: 1400px) {
+  /* ------------banner start------------ */
+  #banner .bg1 .banner-text h3::after {
+    top: 21px;
+    left: 33px;
+  }
+
+  #banner .bg1 .banner-text h3::before {
+    top: 21px;
+    right: 37px;
+  }
+
+  #banner .bg1 .banner-text h1::after {
+    top: -15px;
+    left: 33px;
+  }
+
+  #banner .bg1 .banner-text h1::before {
+    top: -15px;
+    right: 37px;
+  }
+
+  #banner .bg1 .banner-text p {
+    padding: 0 50px;
+  }
+
+  #banner .bg2 .banner-text p {
+    padding-right: 100px;
+  }
+
+  #banner .bg3 .banner-text p {
+    padding-left: 100px;
+  }
+
+  #banner .bg1 .banner-text p::after {
+    width: 80px;
+    bottom: -52px;
+    left: 33px;
+  }
+
+  #banner .bg1 .banner-text p::before {
+    width: 48px;
+    bottom: -53px;
+    right: 37px;
+  }
+  /* ------------banner end------------ */
+
+  /* ------------about start------------ */
+  #about .about-text p {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 57px;
+  }
+  /* ------------about end------------ */
+
+  /* ------------testimonial start------------ */
+
+  #testimonial .testimonial-bg .testimonial-slider .testimonial-item .testimonial-image {
+    width: 100%;
+  }
+
+  #testimonial .testimonial-bg .testimonial-slider .testimonial-item .testimonial-text p {
+    font-size: 13px !important;
+    padding-right: 40px;
+    text-align: unset !important;
+  }
+
+  #testimonial .testimonial-bg .testimonial-slider .testimonial-item .testimonial-details {
+    margin-left: 0;
+  }
+  /* ------------testimonial end------------ */
+
+  /* ------------footer end------------ */
+  footer .footer-main .footer-item ul li {
+    font-size: 13px !important;
+  }
+  /* ------------footer end------------ */
+}
+/* =======================================================================
+                            extra extra large device
 ======================================================================== */
