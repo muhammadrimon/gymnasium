@@ -21,12 +21,9 @@ $(document).ready(function () {
 
   // back to top btn click;
   $(".back-to-top").on("click", function () {
-    $("body, html").animate(
-      {
-        scrollTop: "0px",
-      },
-      1500
-    );
+    $("body, html").animate({
+      scrollTop: "0px",
+    });
   });
 
   // about video popup;
