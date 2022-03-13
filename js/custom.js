@@ -7,6 +7,28 @@ $(document).ready(function () {
     autoplay: true,
   });
 
+  // back to top btn;
+  $(window).on("scroll", function () {
+    let scrolling = $(this).scrollTop();
+
+    // back to top show;
+    if (scrolling > 500) {
+      $(".back-to-top").fadeIn();
+    } else {
+      $(".back-to-top").fadeOut();
+    }
+  });
+
+  // back to top btn click;
+  $(".back-to-top").on("click", function () {
+    $("body, html").animate(
+      {
+        scrollTop: "0px",
+      },
+      1500
+    );
+  });
+
   // about video popup;
 
   new VenoBox({
@@ -110,4 +132,7 @@ $(document).ready(function () {
 
   // scroll animation ;
   AOS.init();
+
+  // preloader ;
+  $("#preloader").fadeOut();
 });
