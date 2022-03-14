@@ -7,6 +7,11 @@ $(document).ready(function () {
     autoplay: true,
   });
 
+  // color-switcher;
+  $(".color-switcher .color-btn").on("click", function () {
+    $(".color-switcher").toggleClass("pos-0");
+  });
+
   // back to top btn;
   $(window).on("scroll", function () {
     let scrolling = $(this).scrollTop();

@@ -1137,5 +1137,110 @@ footer .footer-copy .footer-text p span a {
 }
 
 /* ========================================================
- preloader css end
+ back to top css end
+ ========================================================== */
+
+.color-switcher {
+  width: 150px;
+  height: 30px;
+  background: #555555;
+  position: fixed;
+  top: 200px;
+  right: -150px;
+  z-index: 99999;
+  transition: all linear 0.4s;
+}
+
+.pos-0 {
+  right: 0;
+}
+
+.color-switcher ul li {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.color-switcher ul li.green {
+  background: #2ecc71;
+}
+
+.color-switcher ul li.yellow {
+  background: #f39c12;
+}
+
+.color-switcher ul li.purple {
+  background: #9b59b6;
+}
+
+.color-switcher ul li.defult {
+  background: #e23e38;
+}
+
+.color-switcher .color-btn {
+  width: 30px;
+  height: 30px;
+  background: var(--brandcol);
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  left: -30px;
+  top: 0;
+  z-index: 99999;
+}
+
+.color-switcher .color-btn i {
+  color: var(--linkhov);
+}
+
+/* ========================================================
+ back to top css end
+ ========================================================== */
+
+/* ========================================================
+ color-switcher start
+ ========================================================== */
+
+/* green color start */
+.green .navbar-expand-lg .navbar-nav .nav-link::after,
+.green .color-switcher .color-btn,
+.green .back-to-top,
+.green #routine .routine-item ul li.active,
+.green #routine .routine-menu .nav-tabs .nav-link.active,
+.green #membership .membership-bg .membership-item:hover .membership-btn a,
+.green #membership .membership-bg .membership-item:hover .membership-header h4,
+.green #about .about-video .overlay i,
+.green #banner .bg1 .banner-text p::after,
+.green #banner .bg1 .banner-text p::before,
+.green #banner .bg1 .banner-text h1::after,
+.green #banner .bg1 .banner-text h1::before,
+.green #banner .bg1 .banner-text h3::after,
+.green #banner .bg1 .banner-text h3::before {
+  background: #2ecc71;
+}
+
+.green footer .footer-copy .footer-text p span a,
+.green footer .footer-main .contact ul li span i,
+.green #brand .right-arrow:hover,
+.green #testimonial .testimonial-bg .testimonial-slider .testimonial-item .testimonial-details .ratings i,
+.green #banner .banner-item .banner-text h1 {
+  color: #2ecc71 !important;
+}
+
+.green #testimonial .testimonial-bg .slick-dots li.slick-active,
+.green #banner .slick-dots li.slick-active,
+.green #banner .banner-item .banner-text a:hover {
+  border-color: #2ecc71;
+  background: #2ecc71;
+}
+
+.green #team .team-member .team-image .team-overlay,
+.green #gallery .gallery-bg .gallery-item .gallery-overlay {
+  background: rgba(46, 204, 112, 0.5);
+}
+/* green color ends */
+
+/* ========================================================
+ color-switcher ends
  ========================================================== */
