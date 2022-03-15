@@ -12,6 +12,22 @@ $(document).ready(function () {
     $(".color-switcher").toggleClass("pos-0");
   });
 
+  $(".color-switcher ul .green").on("click", function () {
+    $("body").addClass("green").removeClass("yellow").removeClass("purple").removeClass("defult");
+  });
+
+  $(".color-switcher ul .yellow").on("click", function () {
+    $("body").addClass("yellow").removeClass("green").removeClass("purple").removeClass("defult");
+  });
+
+  $(".color-switcher ul .purple").on("click", function () {
+    $("body").addClass("purple").removeClass("yellow").removeClass("green").removeClass("defult");
+  });
+
+  $(".color-switcher ul .defult").on("click", function () {
+    $("body").removeClass("defult").removeClass("yellow").removeClass("purple").removeClass("green");
+  });
+
   // back to top btn;
   $(window).on("scroll", function () {
     let scrolling = $(this).scrollTop();

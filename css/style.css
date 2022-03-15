@@ -807,6 +807,7 @@ header img {
   left: -20px;
   transform: translateY(-50%);
   transition: all linear 0.4s;
+  cursor: pointer;
 }
 
 #brand .left-arrow:hover {
@@ -821,6 +822,7 @@ header img {
   right: -20px;
   transform: translateY(-50%);
   transition: all linear 0.4s;
+  cursor: pointer;
 }
 
 #brand .right-arrow:hover {
@@ -1222,6 +1224,7 @@ footer .footer-copy .footer-text p span a {
 
 .green footer .footer-copy .footer-text p span a,
 .green footer .footer-main .contact ul li span i,
+.green #brand .left-arrow:hover,
 .green #brand .right-arrow:hover,
 .green #testimonial .testimonial-bg .testimonial-slider .testimonial-item .testimonial-details .ratings i,
 .green #banner .banner-item .banner-text h1 {
@@ -1240,6 +1243,126 @@ footer .footer-copy .footer-text p span a {
   background: rgba(46, 204, 112, 0.5);
 }
 /* green color ends */
+
+/* yellow color start */
+.yellow .navbar-expand-lg .navbar-nav .nav-link::after,
+.yellow .color-switcher .color-btn,
+.yellow .back-to-top,
+.yellow #routine .routine-item ul li.active,
+.yellow #routine .routine-menu .nav-tabs .nav-link.active,
+.yellow #membership .membership-bg .membership-item:hover .membership-btn a,
+.yellow #membership .membership-bg .membership-item:hover .membership-header h4,
+.yellow #about .about-video .overlay i,
+.yellow #banner .bg1 .banner-text p::after,
+.yellow #banner .bg1 .banner-text p::before,
+.yellow #banner .bg1 .banner-text h1::after,
+.yellow #banner .bg1 .banner-text h1::before,
+.yellow #banner .bg1 .banner-text h3::after,
+.yellow #banner .bg1 .banner-text h3::before {
+  background: #f39c12;
+}
+
+.yellow footer .footer-copy .footer-text p span a,
+.yellow footer .footer-main .contact ul li span i,
+.yellow #brand .left-arrow:hover,
+.yellow #brand .right-arrow:hover,
+.yellow #testimonial .testimonial-bg .testimonial-slider .testimonial-item .testimonial-details .ratings i,
+.yellow #banner .banner-item .banner-text h1 {
+  color: #f39c12 !important;
+}
+
+.yellow #testimonial .testimonial-bg .slick-dots li.slick-active,
+.yellow #banner .slick-dots li.slick-active,
+.yellow #banner .banner-item .banner-text a:hover {
+  border-color: #f39c12;
+  background: #f39c12;
+}
+
+.yellow #team .team-member .team-image .team-overlay,
+.yellow #gallery .gallery-bg .gallery-item .gallery-overlay {
+  background: rgba(243, 157, 18, 0.5);
+}
+/* yellow color ends */
+
+/* purple color start */
+.purple .navbar-expand-lg .navbar-nav .nav-link::after,
+.purple .color-switcher .color-btn,
+.purple .back-to-top,
+.purple #routine .routine-item ul li.active,
+.purple #routine .routine-menu .nav-tabs .nav-link.active,
+.purple #membership .membership-bg .membership-item:hover .membership-btn a,
+.purple #membership .membership-bg .membership-item:hover .membership-header h4,
+.purple #about .about-video .overlay i,
+.purple #banner .bg1 .banner-text p::after,
+.purple #banner .bg1 .banner-text p::before,
+.purple #banner .bg1 .banner-text h1::after,
+.purple #banner .bg1 .banner-text h1::before,
+.purple #banner .bg1 .banner-text h3::after,
+.purple #banner .bg1 .banner-text h3::before {
+  background: #9b59b6;
+}
+
+.purple footer .footer-copy .footer-text p span a,
+.purple footer .footer-main .contact ul li span i,
+.purple #brand .left-arrow:hover,
+.purple #brand .right-arrow:hover,
+.purple #testimonial .testimonial-bg .testimonial-slider .testimonial-item .testimonial-details .ratings i,
+.purple #banner .banner-item .banner-text h1 {
+  color: #9b59b6 !important;
+}
+
+.purple #testimonial .testimonial-bg .slick-dots li.slick-active,
+.purple #banner .slick-dots li.slick-active,
+.purple #banner .banner-item .banner-text a:hover {
+  border-color: #9b59b6;
+  background: #9b59b6;
+}
+
+.purple #team .team-member .team-image .team-overlay,
+.purple #gallery .gallery-bg .gallery-item .gallery-overlay {
+  background: rgba(156, 89, 182, 0.5);
+}
+/* purple color ends */
+
+/* defult color start */
+.defult .navbar-expand-lg .navbar-nav .nav-link::after,
+.defult .color-switcher .color-btn,
+.defult .back-to-top,
+.defult #routine .routine-item ul li.active,
+.defult #routine .routine-menu .nav-tabs .nav-link.active,
+.defult #membership .membership-bg .membership-item:hover .membership-btn a,
+.defult #membership .membership-bg .membership-item:hover .membership-header h4,
+.defult #about .about-video .overlay i,
+.defult #banner .bg1 .banner-text p::after,
+.defult #banner .bg1 .banner-text p::before,
+.defult #banner .bg1 .banner-text h1::after,
+.defult #banner .bg1 .banner-text h1::before,
+.defult #banner .bg1 .banner-text h3::after,
+.defult #banner .bg1 .banner-text h3::before {
+  background: #e23e38;
+}
+
+.defult footer .footer-copy .footer-text p span a,
+.defult footer .footer-main .contact ul li span i,
+.defult #brand .left-arrow:hover,
+.defult #brand .right-arrow:hover,
+.defult #testimonial .testimonial-bg .testimonial-slider .testimonial-item .testimonial-details .ratings i,
+.defult #banner .banner-item .banner-text h1 {
+  color: #e23e38 !important;
+}
+
+.defult #testimonial .testimonial-bg .slick-dots li.slick-active,
+.defult #banner .slick-dots li.slick-active,
+.defult #banner .banner-item .banner-text a:hover {
+  border-color: #e23e38;
+  background: #e23e38;
+}
+
+.defult #team .team-member .team-image .team-overlay,
+.defult #gallery .gallery-bg .gallery-item .gallery-overlay {
+  background: rgba(226, 62, 56, 0.5);
+}
+/* defult color ends */
 
 /* ========================================================
  color-switcher ends
