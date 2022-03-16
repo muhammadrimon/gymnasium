@@ -361,6 +361,54 @@ ul {
  banner css end
  ========================================================== */
 
+.modal {
+  z-index: 999999;
+}
+
+.modal .modal-dialog .modal-content {
+  border-radius: 15px !important;
+  background: var(--ddd);
+  padding: 10px 0 !important;
+}
+
+.modal .modal-dialog .modal-content .modal-header {
+  padding: 0 25px !important;
+}
+
+.modal .modal-dialog .modal-content .modal-footer {
+  padding-top: 20px !important;
+}
+
+.modal .modal-dialog .modal-content .modal-body {
+  padding-top: 20px !important;
+}
+
+.modal .modal-dialog .modal-content .modal-body form {
+  width: 400px;
+}
+
+.modal .modal-dialog .modal-content .modal-body form .input-item {
+  width: 400px;
+  height: 40px;
+  color: var(--hcol);
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  padding-left: 10px;
+  border-bottom: 1px solid var(--hcol);
+  background: transparent;
+}
+
+.modal .modal-dialog .modal-content .modal-body form label {
+  color: var(--hcol);
+  padding-left: 5px;
+}
+
+/* ========================================================
+ modal css end
+ ========================================================== */
+
 header h3 {
   color: var(--hcol);
 }

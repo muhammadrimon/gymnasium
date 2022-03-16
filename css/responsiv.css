@@ -59,6 +59,16 @@
   }
   /* ------------banner ends------------ */
 
+  /* ------------modal start------------ */
+  .modal .modal-dialog .modal-content .modal-body form {
+    width: 280px;
+  }
+
+  .modal .modal-dialog .modal-content .modal-body form .input-item {
+    width: 280px;
+  }
+  /* ------------modal ends------------ */
+
   /* ------------about start------------ */
   #about {
     margin: 50px 0;
