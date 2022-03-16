@@ -1142,6 +1142,58 @@ footer .footer-copy .footer-text p span a {
  back to top css end
  ========================================================== */
 
+.offcanvas-btn {
+  width: 30px;
+  height: 30px;
+  background: var(--brandcol);
+  text-align: center;
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  z-index: 9999;
+}
+
+.offcanvas-btn i {
+  font-size: 20px;
+  color: var(--linkhov);
+  line-height: 30px;
+
+  cursor: pointer;
+}
+
+.offcanvas {
+  z-index: 99999;
+}
+
+.offcanvas .offcanvas-header {
+  padding: 20px !important;
+  background: #353535;
+}
+
+.offcanvas .offcanvas-body {
+  background: #ddd;
+}
+
+.offcanvas .offcanvas-header a i {
+  color: var(--brandcol);
+  cursor: pointer;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  transition: all linear 0.4s;
+}
+
+.offcanvas .offcanvas-header a i:hover {
+  color: var(--linkhov);
+  background: var(--brandcol);
+}
+
+/* ========================================================
+ back to top css end
+ ========================================================== */
+
 .color-switcher {
   width: 150px;
   height: 30px;
@@ -1197,7 +1249,7 @@ footer .footer-copy .footer-text p span a {
 }
 
 /* ========================================================
- back to top css end
+ color-switcher css end
  ========================================================== */
 
 /* ========================================================
@@ -1207,6 +1259,7 @@ footer .footer-copy .footer-text p span a {
 /* green color start */
 .green .navbar-expand-lg .navbar-nav .nav-link::after,
 .green .color-switcher .color-btn,
+.green .offcanvas-btn,
 .green .back-to-top,
 .green #routine .routine-item ul li.active,
 .green #routine .routine-menu .nav-tabs .nav-link.active,
@@ -1247,6 +1300,7 @@ footer .footer-copy .footer-text p span a {
 /* yellow color start */
 .yellow .navbar-expand-lg .navbar-nav .nav-link::after,
 .yellow .color-switcher .color-btn,
+.yellow .offcanvas-btn,
 .yellow .back-to-top,
 .yellow #routine .routine-item ul li.active,
 .yellow #routine .routine-menu .nav-tabs .nav-link.active,
@@ -1287,6 +1341,7 @@ footer .footer-copy .footer-text p span a {
 /* purple color start */
 .purple .navbar-expand-lg .navbar-nav .nav-link::after,
 .purple .color-switcher .color-btn,
+.purple .offcanvas-btn,
 .purple .back-to-top,
 .purple #routine .routine-item ul li.active,
 .purple #routine .routine-menu .nav-tabs .nav-link.active,
@@ -1327,6 +1382,7 @@ footer .footer-copy .footer-text p span a {
 /* defult color start */
 .defult .navbar-expand-lg .navbar-nav .nav-link::after,
 .defult .color-switcher .color-btn,
+.defult .offcanvas-btn,
 .defult .back-to-top,
 .defult #routine .routine-item ul li.active,
 .defult #routine .routine-menu .nav-tabs .nav-link.active,
